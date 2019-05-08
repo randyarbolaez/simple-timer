@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>
+        <span id="minutes-text"></span>
+      </h1>
+      <h1>
+        <span id="seconds-text"></span>
+      </h1>
+    </div>
+    <form action="" onsubmit="submitTimer(event)">
+      <input
+        type="number"
+        id="minutes"
+        max="60"
+        min="0"
+        placeholder="mins"
+        required
+      />
+      <input
+        type="number"
+        id="seconds"
+        max="60"
+        min="0"
+        placeholder="secs"
+        required
+      />
+      <button type="submit">Start Timer</button>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
